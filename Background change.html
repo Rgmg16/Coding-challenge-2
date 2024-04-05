@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Change</title>
+</head>
+
+<body id="bdy" style="background-color: brown;">
+    <button id="first" style="background-color: rebeccapurple;"></button>
+    <button id="second" style="background-color: aqua;"></button>
+    <button id= "third" style="background-color: cadetblue;"></button>
+    <button id="fourth" style="background-color:black;"></button>
+
+    <script>
+        const body = document.getElementById('bdy');
+        const one = document.getElementById('first');
+        const two = document.getElementById('second');
+        const three= document.getElementById('third');
+        const four= document.getElementById('fourth');
+        // const three= document.getElementById('third');
+
+
+        body.addEventListener("click", () => {
+            body.style.backgroundColor = "yellow"
+        }, true);
+
+        one.addEventListener("click", () => {
+            body.style.backgroundColor = "rebeccapurple"
+        }, true);
+
+        two.addEventListener("click", () => {
+            body.style.backgroundColor = "aqua"
+        }, true);
+
+        three.addEventListener("click", () => {
+            body.style.backgroundColor = "cadetblue"
+        }, true);
+        
+        four.addEventListener("click", () => {
+            body.style.backgroundColor = "black"
+        }, true);
+
+    </script>
+
+</body>
+
+</html>
